@@ -152,7 +152,16 @@ This plugin connects to the WordPress.org API (https://api.wordpress.org/plugins
 
 **Privacy Policy:** https://wordpress.org/about/privacy/
 
+
+The full uncompressed source code for this plugin is publicly available here:
+https://github.com/bPlugins/document-embedder-addons-for-elementor-wp.git
+
+This repository includes all development files, including the 'src' directory,
+SCSS, JSX, build scripts, and instructions for generating the production build
+contained in the plugin.
+
 == Build Instructions ==
+
 This plugin uses React and webpack for the admin dashboard. To compile the source code, please run the following commands from the plugin root directory:
 1. `npm install`
 2. `npm run build`
