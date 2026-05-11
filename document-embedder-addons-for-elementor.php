@@ -45,10 +45,6 @@ if ( function_exists( 'deafe_fs' ) ) {
                     'has_premium_version' => true,
                     'has_addons'          => false,
                     'has_paid_plans'      => true,
-					'trial'               => array(
-						'days'               => 7,
-						'is_require_payment' => false,
-                	),
                     'menu'                => array(
                         'slug'       => 'document-embedder-addons-for-elementor',
                         'first-path' => 'admin.php?page=document-embedder-addons-for-elementor#/welcome',
@@ -79,7 +75,7 @@ if ( function_exists( 'deafe_fs' ) ) {
 		 * @since 1.2.0
 		 * @var string The plugin version.
 		 */
-		const VERSION = '1.1.6';
+		const VERSION = '1.1.8';
 	
 		/**
 		 * Minimum Elementor Version

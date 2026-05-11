@@ -152,6 +152,7 @@ This plugin connects to the WordPress.org API (https://api.wordpress.org/plugins
 
 **Privacy Policy:** https://wordpress.org/about/privacy/
 
+== Source Code ==
 
 The full uncompressed source code for this plugin is publicly available here:
 https://github.com/bPlugins/document-embedder-addons-for-elementor-wp.git

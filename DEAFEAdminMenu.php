@@ -88,8 +88,8 @@ if(!class_exists("DEAFEAdminMenu")) {
 				data-info='<?php echo esc_attr( wp_json_encode( [
 					'version' => DEAFE_VERSION,
 					'nonce' => wp_create_nonce( 'deafe_admin_nonce' ),
-					'isPremium' => false,
-					'hasPro' => false,
+					false,
+					false,
 					'action' => 'deafeGetBlocks',
 					'pricingUrl' => admin_url( 'admin.php?page=document-embedder-addons-for-elementor#/pricing' ),
 				] ) ); ?>'
