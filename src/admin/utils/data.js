@@ -50,6 +50,16 @@ export const dashboardInfo = (info) => {
 		],
 		changelogs: [
 			{
+				version: '1.1.8 – 11-May-26',
+				type: 'update',
+				list: [
+					'Cleaned up the codebase and removed unused dependencies.',
+					'Improved the presentation of premium-only settings with intuitive notice cards.',
+					'Refactored the codebase, including improvements to prefixes, text domains, nonce validation, escaping, and overall coding standards.',
+					'Resolved all plugin check issues.',
+				]
+			},
+			{
 				version: '1.1.7 18-Apr-26',
 				type: 'fix',
 				list: [

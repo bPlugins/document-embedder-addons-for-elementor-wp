@@ -64,6 +64,11 @@ if(!class_exists("DEAFEAdminMenu")) {
 				wp_send_json_error( 'Invalid Request' );
 			}
 
+			// Add this capability check
+			if( !current_user_can( 'manage_options' ) ) {
+				wp_send_json_error( 'Unauthorized' );
+			}
+
 			// $data = json_decode( stripslashes( $_POST['data'] ), true );
 			$data = isset( $_POST['data'] ) ? array_map( 'sanitize_text_field', wp_unslash( $_POST['data'] ) ) : array();
 			$db_data = get_option( 'deafeGetWidgets', [] );
@@ -83,7 +88,6 @@ if(!class_exists("DEAFEAdminMenu")) {
 				data-info='<?php echo esc_attr( wp_json_encode( [
 					'version' => DEAFE_VERSION,
 					'nonce' => wp_create_nonce( 'deafe_admin_nonce' ),
-					'licenseActiveNonce' => wp_create_nonce( 'bPlLicenseActivation' ),
 					'isPremium' => false,
 					'hasPro' => false,
 					'action' => 'deafeGetBlocks',

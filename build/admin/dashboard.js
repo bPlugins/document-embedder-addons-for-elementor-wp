@@ -14574,100 +14574,100 @@ const siteURL = 'https://elementor.bplugins.com';
 const demoLink = `${siteURL}/demo`;
 const docsURL = `https://bplugins.com/docs/document-embedder-addons-for-elementor/widget-guides/`;
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ([{
-  name: `bae_doc_embedder`,
+  name: `deafe_doc_embedder`,
   title: 'Document Embedder',
   icon: _blocksIcon__WEBPACK_IMPORTED_MODULE_0__.docEmbedderIcon,
   demo: `${demoLink}/google-doc-embedder/`,
   docs: `${docsURL}`
 }, {
-  name: `bae_excel_embedder`,
+  name: `deafe_excel_embedder`,
   title: 'Excel Embedder',
   icon: _blocksIcon__WEBPACK_IMPORTED_MODULE_0__.excelEmbedderIcon,
   demo: `${demoLink}/excel-embedder/`,
   docs: `${docsURL}`
 }, {
-  name: `bae_pdf_embedder`,
+  name: `deafe_pdf_embedder`,
   title: 'PDF Embedder',
   icon: _blocksIcon__WEBPACK_IMPORTED_MODULE_0__.pdfEmbedderIcon,
   demo: `${demoLink}/pdf-embedder/`,
   docs: `${docsURL}`
 }, {
-  name: `bae_word_viewer`,
+  name: `deafe_word_viewer`,
   title: 'Word Viewer',
   icon: _blocksIcon__WEBPACK_IMPORTED_MODULE_0__.wordViewerIcon,
   demo: `${demoLink}/word-viewer/`,
   docs: `${docsURL}`
 }, {
-  name: `bae_excel_viewer`,
+  name: `deafe_excel_viewer`,
   title: 'Excel Viewer',
   icon: _blocksIcon__WEBPACK_IMPORTED_MODULE_0__.excelViewerIcon,
   demo: `${demoLink}/excel-embedder/`,
   docs: `${docsURL}`
 }, {
-  name: `bae_pp_embedder`,
+  name: `deafe_pp_embedder`,
   title: 'PowerPoint Embedder',
   icon: _blocksIcon__WEBPACK_IMPORTED_MODULE_0__.powerpointEmbedderIcon,
   demo: `${demoLink}/powerpoint-embedder/`,
   docs: `${docsURL}`
 }, {
-  name: `bae_powerpoint_viewer`,
+  name: `deafe_powerpoint_viewer`,
   title: 'PowerPoint Viewer',
   icon: _blocksIcon__WEBPACK_IMPORTED_MODULE_0__.powerpointViewerIcon,
   demo: `${demoLink}/powerpoint-viewer/`,
   docs: `${docsURL}`
 }, {
-  name: `bae_google_docs`,
+  name: `deafe_google_docs`,
   title: 'Google Docs Viewer',
   icon: _blocksIcon__WEBPACK_IMPORTED_MODULE_0__.googleDocViewerIcon,
   demo: `${demoLink}/google-doc-embedder/`,
   docs: `${docsURL}`
 }, {
-  name: `bae_google_sheets`,
+  name: `deafe_google_sheets`,
   title: 'Google Sheets Embedder',
   icon: _blocksIcon__WEBPACK_IMPORTED_MODULE_0__.googleSheetViewerIcon,
   demo: `${demoLink}/google-sheet-embedder/`,
   docs: `${docsURL}`
 }, {
-  name: `bae_google_slides`,
+  name: `deafe_google_slides`,
   title: 'Google Slides Embedder',
   icon: _blocksIcon__WEBPACK_IMPORTED_MODULE_0__.googleSlideViewerIcon,
   demo: `${demoLink}/google-slides-embedder/`,
   docs: `${docsURL}`
 }, {
-  name: `bae_pdf_native_embedder`,
+  name: `deafe_pdf_native_embedder`,
   title: 'PDF Native Embedder',
   icon: _blocksIcon__WEBPACK_IMPORTED_MODULE_0__.pdfNativeEmbedderIcon,
   demo: `${demoLink}/pdf-embedder/`,
   docs: `${docsURL}`
 }, {
-  name: `bae_sleek_pdf_viewer`,
+  name: `deafe_sleek_pdf_viewer`,
   title: 'Sleek PDF Viewer',
   icon: _blocksIcon__WEBPACK_IMPORTED_MODULE_0__.sleekpdfViewerIcon,
   demo: `${demoLink}/sleek-pdf-viewer/`,
   docs: `${docsURL}`
 }, {
-  name: `bae_adobe_pdf_viewer`,
+  name: `deafe_adobe_pdf_viewer`,
   title: 'Adobe PDF Viewer',
   icon: _blocksIcon__WEBPACK_IMPORTED_MODULE_0__.adobepdfViewerIcon,
   demo: `${demoLink}/adobe-pdf-viewer-full-window/`,
   docs: `${docsURL}`,
   isPremium: true
 }, {
-  name: `bae_document_library`,
+  name: `deafe_document_library`,
   title: 'Document Library',
   icon: _blocksIcon__WEBPACK_IMPORTED_MODULE_0__.documentLibraryIcon,
   demo: `${demoLink}/document-library/`,
   docs: `${docsURL}`,
   isPremium: true
 }, {
-  name: `bae_pdfjs_pdf_viewer`,
+  name: `deafe_pdfjs_pdf_viewer`,
   title: 'Pdf.js PDF Viewer',
   icon: _blocksIcon__WEBPACK_IMPORTED_MODULE_0__.pdfjsPdfViewerIcon,
   demo: `${demoLink}/pdf-js-pdf-viewer/`,
   docs: `${docsURL}`,
   isPremium: true
 }, {
-  name: `bae_flip_book_pdf_viewer`,
+  name: `deafe_flip_book_pdf_viewer`,
   title: 'Flip Book PDF Viewer',
   icon: _blocksIcon__WEBPACK_IMPORTED_MODULE_0__.flipBookPDFViewer,
   demo: `${demoLink}/flip-3d-pdf-viewer/`,
@@ -15022,6 +15022,10 @@ const dashboardInfo = info => {
     },
     proFeatures: ['Adobe PDF Viewer: A reliable, feature-rich PDF viewer powered by Adobe’s PDF engine.', 'Document Library: Organize and manage all your embedded documents in one centralized location with easy access and quick reusable upload', 'Pdf.js PDF Viewer: Display your PDF in premium look with the pdf.js library', 'Search functionality within Adobe PDF embedded documents.', 'Allow users to highlight and annotate documents.', 'Add watermarks to embedded documents for branding and security.', 'Add content protection features to prevent unauthorized downloading or copying of embedded documents.', 'Centralized hub to organize and manage all your embedded documents.', 'Lightbox display option for a more immersive viewing experience.', 'Priority support for any issues or questions related to the plugin.'],
     changelogs: [{
+      version: '1.1.8 – 11-May-26',
+      type: 'update',
+      list: ['Cleaned up the codebase and removed unused dependencies.', 'Improved the presentation of premium-only settings with intuitive notice cards.', 'Refactored the codebase, including improvements to prefixes, text domains, nonce validation, escaping, and overall coding standards.', 'Resolved all plugin check issues.']
+    }, {
       version: '1.1.7 18-Apr-26',
       type: 'fix',
       list: ['Fixed: PHP Fatal error on elementor editor']

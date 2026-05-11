@@ -240,6 +240,13 @@ Our dedicated support team is ready to help! Please submit your questions or iss
 
 == Changelog ==
 
+= 1.1.8 – 11-May-26 =
+* Update: Cleaned up the codebase and removed unused dependencies.
+* Update: Improved the presentation of premium-only settings with intuitive notice cards.
+* Update: Refactored the codebase, including improvements to prefixes, text domains, nonce validation, escaping, and overall coding standards.
+* Fix: Resolved all plugin check issues.
+* New: Released version 1.1.8.
+
 = 1.1.7 18-Apr-26 =
 * Fixed: PHP Fatal error on elementor editor
 
