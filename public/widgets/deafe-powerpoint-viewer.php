@@ -20,7 +20,7 @@ class deafe_powerpoint_viewer extends Widget_Base {
 	}
 
 	public function get_icon() {
-		return 'bl_icon fas fa-file-powerpoint eicon-carousel-loop';
+		return 'deafe_icon fas fa-file-powerpoint eicon-carousel-loop';
 	}
 
 	public function get_categories() {

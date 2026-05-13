@@ -20,7 +20,7 @@ class deafe_pp_embedder extends Widget_Base {
 	}
 
 	public function get_icon() {
-		return 'bl_icon far fa-file-powerpoint eicon-nested-carousel'; 
+		return 'deafe_icon far fa-file-powerpoint eicon-nested-carousel'; 
 	}
 
 	public function get_categories() {

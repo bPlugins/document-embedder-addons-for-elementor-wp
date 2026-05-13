@@ -96,7 +96,23 @@ Stay connected and get the latest updates:
 
 == External services ==
 
-This plugin uses external third-party services to render and display documents inside embedded viewers and iframes.
+This plugin connects to the following external services from the admin dashboard:
+
+= bPlugins API =
+
+* **Service URL:** [https://api.bplugins.com](https://api.bplugins.com)
+* **Purpose:** The plugin's admin dashboard fetches product comparison data and pricing information to display relevant upgrade options and feature details.
+* **Data Sent:** Only the plugin slug is transmitted; no personal or site data is collected.
+* **Terms of Service:** [https://bplugins.com/terms-of-service/](https://bplugins.com/terms-of-service/)
+* **Privacy Policy:** [https://bplugins.com/privacy-policy/](https://bplugins.com/privacy-policy/)
+
+= WordPress.org Plugins API =
+
+* **Service URL:** [https://api.wordpress.org/plugins/info/1.2/](https://api.wordpress.org/plugins/info/1.2/)
+* **Purpose:** The admin dashboard queries the official WordPress.org Plugins API to retrieve and display a curated list of other plugins by the same author ("Our Plugins" section).
+* **Data Sent:** Plugin slugs and author name; no personal or site data is collected.
+* **Terms of Service:** [https://wordpress.org/about/tos/](https://wordpress.org/about/tos/)
+* **Privacy Policy:** [https://wordpress.org/about/privacy/](https://wordpress.org/about/privacy/)
 
 = Google Docs Viewer =
 
@@ -141,16 +157,6 @@ https://privacy.microsoft.com/en-us/privacystatement
 
 Terms of Service:
 https://www.microsoft.com/en-us/legal/terms-of-use
-
-= WordPress.org API =
-
-This plugin connects to the WordPress.org API (https://api.wordpress.org/plugins/info/1.2/) to retrieve a list of plugins published by the same author.
-
-- **Purpose:** To display other plugins by the author inside the admin dashboard.
-
-- **Data Sent:** No personal user data is sent. Only the author query parameter is used.
-
-**Privacy Policy:** https://wordpress.org/about/privacy/
 
 == Source Code ==
 

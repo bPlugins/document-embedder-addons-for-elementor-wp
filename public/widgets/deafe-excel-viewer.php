@@ -20,7 +20,7 @@ class deafe_excel_viewer extends Widget_Base {
 	}
 
 	public function get_icon() {
-		return 'bl_icon fas fa-file-excel eicon-post-info';
+		return 'deafe_icon fas fa-file-excel eicon-post-info';
 	}
 
 	public function get_categories() {

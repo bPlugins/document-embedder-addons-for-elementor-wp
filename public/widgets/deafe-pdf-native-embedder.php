@@ -20,7 +20,7 @@ class deafe_pdf_native_embedder extends Widget_Base {
 	}
 
 	public function get_icon() {
-		return 'bl_icon fas fa-file-pdf eicon-post-content';
+		return 'deafe_icon fas fa-file-pdf eicon-post-content';
 	}
 
 	public function get_categories() {

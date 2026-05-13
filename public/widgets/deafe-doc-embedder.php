@@ -20,7 +20,7 @@ class deafe_doc_embedder extends Widget_Base {
 	}
 
 	public function get_icon() {
-		return 'bl_icon far fa-file-word eicon-document-file';
+		return 'deafe_icon far fa-file-word eicon-document-file';
 	}
 
 	public function get_categories() {

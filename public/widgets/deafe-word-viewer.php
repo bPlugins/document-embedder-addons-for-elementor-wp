@@ -20,7 +20,7 @@ class deafe_word_viewer extends Widget_Base {
 	}
 
 	public function get_icon() {
-		return 'bl_icon fas fa-file-word eicon-post-title';
+		return 'deafe_icon fas fa-file-word eicon-post-title';
 	}
 
 	public function get_categories() {

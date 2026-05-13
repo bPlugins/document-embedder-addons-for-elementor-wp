@@ -20,7 +20,7 @@ class deafe_excel_embedder extends Widget_Base {
 	}
 
 	public function get_icon() {
-		return 'bl_icon far fa-file-excel eicon-sidebar';
+		return 'deafe_icon far fa-file-excel eicon-sidebar';
 	}
 
 	public function get_categories() {

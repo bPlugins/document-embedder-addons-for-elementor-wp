@@ -20,7 +20,7 @@ class deafe_pdf_embedder extends Widget_Base {
 	}
 
 	public function get_icon() {
-		return 'bl_icon far fa-file-pdf eicon-post-excerpt';
+		return 'deafe_icon far fa-file-pdf eicon-post-excerpt';
 	}
 
 	public function get_categories() {
@@ -29,7 +29,7 @@ class deafe_pdf_embedder extends Widget_Base {
 
 
 	public function get_script_depends() {
-		return ['bae-public'];
+		return ['deafe-public'];
 	}
 
 	protected function register_controls() {

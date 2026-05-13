@@ -20,7 +20,7 @@ class deafe_google_sheets extends Widget_Base {
 	}
 
 	public function get_icon() {
-		return 'bl_icon fas fa-table eicon-table-of-contents';
+		return 'deafe_icon fas fa-table eicon-table-of-contents';
 	}
 
 	public function get_categories() {

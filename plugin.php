@@ -148,43 +148,43 @@ class DEAFE_BAddon {
 		}
 
 		if ( !in_array( 'deafe_doc_embedder', $active_widgets, true ) ) {
-			\Elementor\Plugin::instance()->widgets_manager->register_widget_type( new Widgets\deafe_doc_embedder() );
+			\Elementor\Plugin::instance()->widgets_manager->register( new Widgets\deafe_doc_embedder() );
 		}
 		if ( !in_array( 'deafe_pdf_embedder', $active_widgets, true ) ) {
-			\Elementor\Plugin::instance()->widgets_manager->register_widget_type( new Widgets\deafe_pdf_embedder() );
+			\Elementor\Plugin::instance()->widgets_manager->register( new Widgets\deafe_pdf_embedder() );
 		}
 		if ( !in_array( 'deafe_word_viewer', $active_widgets, true ) ) {
-			\Elementor\Plugin::instance()->widgets_manager->register_widget_type( new Widgets\deafe_word_viewer() );
+			\Elementor\Plugin::instance()->widgets_manager->register( new Widgets\deafe_word_viewer() );
 		}
 		if ( !in_array( 'deafe_excel_embedder', $active_widgets, true ) ) {
-			\Elementor\Plugin::instance()->widgets_manager->register_widget_type( new Widgets\deafe_excel_embedder() );
+			\Elementor\Plugin::instance()->widgets_manager->register( new Widgets\deafe_excel_embedder() );
 		}
 		if ( !in_array( 'deafe_excel_viewer', $active_widgets, true ) ) {
-			\Elementor\Plugin::instance()->widgets_manager->register_widget_type( new Widgets\deafe_excel_viewer() );
+			\Elementor\Plugin::instance()->widgets_manager->register( new Widgets\deafe_excel_viewer() );
 		}
 		if ( !in_array( 'deafe_powerpoint_embedder', $active_widgets, true ) ) {
-			\Elementor\Plugin::instance()->widgets_manager->register_widget_type( new Widgets\deafe_pp_embedder() );
+			\Elementor\Plugin::instance()->widgets_manager->register( new Widgets\deafe_pp_embedder() );
 		}
 		if ( !in_array( 'deafe_powerpoint_viewer', $active_widgets, true ) ) {
-			\Elementor\Plugin::instance()->widgets_manager->register_widget_type( new Widgets\deafe_powerpoint_viewer() );
+			\Elementor\Plugin::instance()->widgets_manager->register( new Widgets\deafe_powerpoint_viewer() );
 		}
 		if ( !in_array( 'deafe_pdf_embedder', $active_widgets, true ) ) {
-			\Elementor\Plugin::instance()->widgets_manager->register_widget_type( new Widgets\deafe_pdf_embedder() );
+			\Elementor\Plugin::instance()->widgets_manager->register( new Widgets\deafe_pdf_embedder() );
 		}
 		if ( !in_array( 'deafe_google_docs', $active_widgets, true ) ) {
-			\Elementor\Plugin::instance()->widgets_manager->register_widget_type( new Widgets\deafe_google_docs() );
+			\Elementor\Plugin::instance()->widgets_manager->register( new Widgets\deafe_google_docs() );
 		}
 		if ( !in_array( 'deafe_google_sheets', $active_widgets, true ) ) {
-			\Elementor\Plugin::instance()->widgets_manager->register_widget_type( new Widgets\deafe_google_sheets() );
+			\Elementor\Plugin::instance()->widgets_manager->register( new Widgets\deafe_google_sheets() );
 		}
 		if ( !in_array( 'deafe_google_slides', $active_widgets, true ) ) {
-			\Elementor\Plugin::instance()->widgets_manager->register_widget_type( new Widgets\deafe_google_slides() );
+			\Elementor\Plugin::instance()->widgets_manager->register( new Widgets\deafe_google_slides() );
 		}
 		if ( !in_array( 'deafe_pdf_native_embedder', $active_widgets, true ) ) {
-			\Elementor\Plugin::instance()->widgets_manager->register_widget_type( new Widgets\deafe_pdf_native_embedder() );
+			\Elementor\Plugin::instance()->widgets_manager->register( new Widgets\deafe_pdf_native_embedder() );
 		}
 		if ( !in_array( 'deafe_sleek_pdf_viewer', $active_widgets, true ) ) {
-			\Elementor\Plugin::instance()->widgets_manager->register_widget_type( new Widgets\deafe_sleek_pdf_viewer() );
+			\Elementor\Plugin::instance()->widgets_manager->register( new Widgets\deafe_sleek_pdf_viewer() );
 		}
 	}
 	

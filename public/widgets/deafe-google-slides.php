@@ -20,7 +20,7 @@ class deafe_google_slides extends Widget_Base {
 	}
 
 	public function get_icon() {
-		return 'bl_icon fas fa-file-powerpoint eicon-slider-push';
+		return 'deafe_icon fas fa-file-powerpoint eicon-slider-push';
 	}
 
 	public function get_categories() {
