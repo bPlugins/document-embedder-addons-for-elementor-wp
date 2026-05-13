@@ -37,7 +37,6 @@ if ( function_exists( 'deafe_fs' ) ) {
 				$deafe_fsConfig = array(
 					'id'                  => '20539',
                     'slug'                => 'document-embedder-addons-for-elementor',
-                    'premium_slug'        => 'document-embedder-addons-for-elementor-pro',
                     'type'                => 'plugin',
                     'public_key'          => 'pk_266740f98755c34bcd6cf52c052f8',
                     'is_premium'          => false,
@@ -67,7 +66,7 @@ if ( function_exists( 'deafe_fs' ) ) {
 	require_once 'enable-mime-type.php';
 	require_once 'public/helper/deafe-common-settings-render.php';
 
-	final class BAddon_main_element_pro {
+	final class DEAFE_main_element_pro {
 	
 		/**
 		 * Plugin Version
@@ -334,6 +333,6 @@ if ( function_exists( 'deafe_fs' ) ) {
 	
 	// ... Your plugin's main file logic ...
 	// Instantiate BAddon_main_element.
-	new BAddon_main_element_pro();
+	new DEAFE_main_element_pro();
 	
 }

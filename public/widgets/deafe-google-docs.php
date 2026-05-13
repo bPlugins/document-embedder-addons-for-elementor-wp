@@ -12,7 +12,7 @@ class deafe_google_docs extends Widget_Base {
 
 	use DEAFE_Common_Settings_Render;
 	public function get_name() {
-		return 'bae-google-docs';
+		return 'deafe-google-docs';
 	}
 
 	public function get_title() {

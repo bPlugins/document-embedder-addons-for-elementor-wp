@@ -1,17 +1,17 @@
 <?php
 namespace BAddon;
 
-use BAddon\Widgets\bae_pdf_native_embedder;
-use BAddon\Widgets\bae_pdf_embedder;
-use BAddon\Widgets\bae_doc_embedder;
-use BAddon\Widgets\bae_excel_embedder;
-use BAddon\Widgets\bae_pp_embedder;
-use BAddon\Widgets\bae_word_viewer;
-use BAddon\Widgets\bae_excel_viewer;
-use BAddon\Widgets\bae_powerpoint_viewer;
-use BAddon\Widgets\bae_google_docs;
-use BAddon\Widgets\bae_google_sheets;
-use BAddon\Widgets\bae_google_slides;
+use BAddon\Widgets\deafe_pdf_native_embedder;
+use BAddon\Widgets\deafe_pdf_embedder;
+use BAddon\Widgets\deafe_doc_embedder;
+use BAddon\Widgets\deafe_excel_embedder;
+use BAddon\Widgets\deafe_pp_embedder;
+use BAddon\Widgets\deafe_word_viewer;
+use BAddon\Widgets\deafe_excel_viewer;
+use BAddon\Widgets\deafe_powerpoint_viewer;
+use BAddon\Widgets\deafe_google_docs;
+use BAddon\Widgets\deafe_google_sheets;
+use BAddon\Widgets\deafe_google_slides;
 if ( ! defined( 'ABSPATH' ) ) exit;
 
 /**
@@ -20,7 +20,7 @@ if ( ! defined( 'ABSPATH' ) ) exit;
  * Main Plugin class
  * @since 1.2.0
  */
-class Bae_BAddon {
+class DEAFE_BAddon {
 
 	/**
 	 * Instance
@@ -123,9 +123,9 @@ class Bae_BAddon {
 	 */
 	public function widget_styles(){
 
-		wp_register_style("bae-main", plugins_url("/admin/assets/css/main.css",__FILE__), [], DEAFE_VERSION);
-		wp_register_script("bae-public", plugins_url("/public/assets/js/public.js",__FILE__), [], DEAFE_VERSION, true);
-		wp_enqueue_style( 'bae-main' );
+		wp_register_style("deafe-main", plugins_url("/admin/assets/css/main.css",__FILE__), [], DEAFE_VERSION);
+		wp_register_script("deafe-public", plugins_url("/public/assets/js/public.js",__FILE__), [], DEAFE_VERSION, true);
+		wp_enqueue_style( 'deafe-main' );
 	}
 	
 	/**
@@ -189,7 +189,7 @@ class Bae_BAddon {
 	}
 	
 	//category registered
-	public function add_elementor_widget_categories( $elements_manager ) {
+	public function deafe_add_elementor_widget_categories( $elements_manager ) {
 
 		$elements_manager->add_category(
 			'document-embedder-addons-for-elementor',
@@ -217,7 +217,7 @@ class Bae_BAddon {
 		add_action( 'elementor/widgets/widgets_registered', [ $this, 'register_widgets' ] );
 
 		//category registered
-		add_action( 'elementor/elements/categories_registered',  [ $this,'add_elementor_widget_categories' ]);
+		add_action( 'elementor/elements/categories_registered',  [ $this,'deafe_add_elementor_widget_categories' ]);
 		add_action( 'elementor/editor/after_enqueue_styles', [ $this, 'editor_scripts' ] );
 
 	}
@@ -225,4 +225,4 @@ class Bae_BAddon {
 }
 
 // Instantiate Plugin Class
-Bae_BAddon::instance();
+DEAFE_BAddon::instance();

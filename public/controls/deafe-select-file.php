@@ -38,7 +38,7 @@ class SelectFile extends \Elementor\Base_Data_Control {
 	    wp_enqueue_script('media-upload');
 	    wp_enqueue_script('thickbox');
 		// Scripts
-		wp_register_script( 'bplugins-elementor-controls', plugins_url( '/js/controls.js', __FILE__ ), [ 'jquery' ], '1.0.0', true );
+		wp_register_script( 'deafe-elementor-controls', plugins_url( '/js/controls.js', __FILE__ ), [ 'jquery' ], '1.0.0', true );
 		wp_enqueue_script( 'bplugins-elementor-controls' );
 	}
 
