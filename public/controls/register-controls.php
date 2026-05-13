@@ -1,9 +1,9 @@
 <?php
 
 if ( ! defined( 'ABSPATH' ) ) exit; // Exit if accessed directly
-if(class_exists('BPlugins_Controls_Register')) exit;
+if(class_exists('DEAFE_Controls_Register')) exit;
 
-final class BPlugins_Controls_Register {
+final class DEAFE_Controls_Register {
 
 	/**
 	 * Plugin Version
@@ -262,4 +262,4 @@ final class BPlugins_Controls_Register {
 
 }
 
-BPlugins_Controls_Register::instance();
+DEAFE_Controls_Register::instance();

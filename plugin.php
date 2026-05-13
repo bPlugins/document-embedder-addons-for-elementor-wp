@@ -1,17 +1,17 @@
 <?php
-namespace BAddon;
+namespace DEAFE;
 
-use BAddon\Widgets\deafe_pdf_native_embedder;
-use BAddon\Widgets\deafe_pdf_embedder;
-use BAddon\Widgets\deafe_doc_embedder;
-use BAddon\Widgets\deafe_excel_embedder;
-use BAddon\Widgets\deafe_pp_embedder;
-use BAddon\Widgets\deafe_word_viewer;
-use BAddon\Widgets\deafe_excel_viewer;
-use BAddon\Widgets\deafe_powerpoint_viewer;
-use BAddon\Widgets\deafe_google_docs;
-use BAddon\Widgets\deafe_google_sheets;
-use BAddon\Widgets\deafe_google_slides;
+use DEAFE\Widgets\deafe_pdf_native_embedder;
+use DEAFE\Widgets\deafe_pdf_embedder;
+use DEAFE\Widgets\deafe_doc_embedder;
+use DEAFE\Widgets\deafe_excel_embedder;
+use DEAFE\Widgets\deafe_pp_embedder;
+use DEAFE\Widgets\deafe_word_viewer;
+use DEAFE\Widgets\deafe_excel_viewer;
+use DEAFE\Widgets\deafe_powerpoint_viewer;
+use DEAFE\Widgets\deafe_google_docs;
+use DEAFE\Widgets\deafe_google_sheets;
+use DEAFE\Widgets\deafe_google_slides;
 if ( ! defined( 'ABSPATH' ) ) exit;
 
 /**

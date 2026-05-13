@@ -1,9 +1,9 @@
 <?php
-namespace BAddon\Widgets;
+namespace DEAFE\Widgets;
 
 use Elementor\Widget_Base;
 use Elementor\Controls_Manager;
-use BAddon\BAE\DEAFE_Common_Settings_Render;
+use DEAFE\Helper\DEAFE_Common_Settings_Render;
 
 if ( !defined( 'ABSPATH' ) ) 
 	exit; 

@@ -1,16 +1,10 @@
 <?php
-namespace BAddon\BAE;
+namespace DEAFE\Helper;
 use Elementor\Widget_Base;
 use Elementor\Controls_Manager;
 use Elementor\Group_Control_Border;
 use Elementor\Group_Control_Typography;
 use Elementor\Group_Control_Box_Shadow;
-
-/**
- * Common Settings Render
- *
- * @package BAE
- */
 
 trait DEAFE_Common_Settings_Render {
 
