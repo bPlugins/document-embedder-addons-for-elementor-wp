@@ -10,6 +10,7 @@
  * License:     GPLv3
  * Text Domain: document-embedder-addons-for-elementor
  * Domain Path: /languages
+ * Requires Plugins: elementor
  */
 
 
@@ -40,7 +41,6 @@ if ( function_exists( 'deafe_fs' ) ) {
                     'type'                => 'plugin',
                     'public_key'          => 'pk_266740f98755c34bcd6cf52c052f8',
                     'is_premium'          => false,
-                    'premium_suffix'      => 'Pro',
                     'has_premium_version' => true,
                     'has_addons'          => false,
                     'has_paid_plans'      => true,
@@ -108,8 +108,6 @@ if ( function_exists( 'deafe_fs' ) ) {
 	
 			register_activation_hook( __FILE__, [$this, 'activate']);
 			add_action( 'admin_enqueue_scripts', [ $this, 'deafe_enqueue_admin_style_scripts' ] );
-			add_action( 'wp_ajax_deafe_install_plugin', [ $this, 'deafe_install_plugin_elementor' ] );
-			add_action( 'wp_ajax_deafe_activate_plugin', [ $this, 'deafe_activate_plugin_elementor' ] );
 		}
 	
 		/**
@@ -117,7 +115,6 @@ if ( function_exists( 'deafe_fs' ) ) {
 		 */
 		public function activate(){
 			if ( !function_exists( 'deactivate_plugins' ) ) { 
-				require_once ABSPATH . '/wp-admin/includes/plugin.php';
 			}
 			// deactivate_plugins('document-embedder-addons-for-elementor/document-embedder-addons-for-elementor.php');
 		} 
@@ -285,49 +282,6 @@ if ( function_exists( 'deafe_fs' ) ) {
 			);
 	
 			printf( '<div class="notice notice-warning is-dismissible"><p>%1$s</p></div>', esc_html($message));
-		}
-
-		public function deafe_install_plugin_elementor() {
-			if ( ! current_user_can( 'install_plugins' ) || ! check_ajax_referer( 'deafe_install_plugin', 'nonce', false ) ) {
-				wp_send_json_error( 'Unauthorized' );
-			}
-
-			include_once ABSPATH . 'wp-admin/includes/class-wp-upgrader.php';
-			include_once ABSPATH . 'wp-admin/includes/plugin-install.php';
-			include_once ABSPATH . 'wp-admin/includes/file.php';
-			include_once ABSPATH . 'wp-admin/includes/misc.php';
-
-			$plugin_slug = 'elementor';
-			$api = plugins_api( 'plugin_information', [ 'slug' => $plugin_slug, 'fields' => [ 'sections' => false ] ] );
-			if ( is_wp_error( $api ) ) {
-				wp_send_json_error( $api->get_error_message() );
-			}
-
-			$upgrader = new Plugin_Upgrader( new Automatic_Upgrader_Skin() );
-			$result = $upgrader->install( $api->download_link );
-
-			if ( is_wp_error( $result ) ) {
-				wp_send_json_error( $result->get_error_message() );
-			}
-
-			wp_send_json_success( 'Elementor installed successfully! Please activate it.' );
-		}
-
-		public function deafe_activate_plugin_elementor() {
-			if ( ! current_user_can( 'activate_plugins' ) || ! check_ajax_referer( 'deafe_install_plugin', 'nonce', false ) ) {
-				wp_send_json_error( 'Unauthorized' );
-			}
-
-			include_once ABSPATH . 'wp-admin/includes/plugin.php';
-
-			$plugin = 'elementor/elementor.php';
-			$result = activate_plugin( $plugin );
-
-			if ( is_wp_error( $result ) ) {
-				wp_send_json_error( $result->get_error_message() );
-			}
-
-			wp_send_json_success( 'Elementor activated successfully!' );
 		}
 	}
 	

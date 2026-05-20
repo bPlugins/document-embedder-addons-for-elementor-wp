@@ -100,63 +100,65 @@ This plugin connects to the following external services from the admin dashboard
 
 = bPlugins API =
 
-* **Service URL:** [https://api.bplugins.com](https://api.bplugins.com)
-* **Purpose:** The plugin's admin dashboard fetches product comparison data and pricing information to display relevant upgrade options and feature details.
-* **Data Sent:** Only the plugin slug is transmitted; no personal or site data is collected.
-* **Terms of Service:** [https://bplugins.com/terms-of-service/](https://bplugins.com/terms-of-service/)
-* **Privacy Policy:** [https://bplugins.com/privacy-policy/](https://bplugins.com/privacy-policy/)
+* Service URL: https://api.bplugins.com
+* Purpose: The plugin's admin dashboard fetches product comparison data and pricing information to display relevant upgrade options and feature details.
+* Data Sent: Only the plugin slug is transmitted; no personal or site data is collected.
+* Terms of Service: https://bplugins.com/terms-of-service/
+* Privacy Policy: https://bplugins.com/privacy-policy/
 
 = WordPress.org Plugins API =
 
-* **Service URL:** [https://api.wordpress.org/plugins/info/1.2/](https://api.wordpress.org/plugins/info/1.2/)
-* **Purpose:** The admin dashboard queries the official WordPress.org Plugins API to retrieve and display a curated list of other plugins by the same author ("Our Plugins" section).
-* **Data Sent:** Plugin slugs and author name; no personal or site data is collected.
-* **Terms of Service:** [https://wordpress.org/about/tos/](https://wordpress.org/about/tos/)
-* **Privacy Policy:** [https://wordpress.org/about/privacy/](https://wordpress.org/about/privacy/)
+* Service URL: https://api.wordpress.org/plugins/info/1.2/
+* Purpose: The admin dashboard queries the official WordPress.org Plugins API to retrieve and display a curated list of other plugins by the same author ("Our Plugins" section).
+* Data Sent: Plugin slugs and author name; no personal or site data is collected.
+* Terms of Service: https://wordpress.org/about/tos/
+* Privacy Policy: https://wordpress.org/about/privacy/
 
 = Google Docs Viewer =
 
 This plugin uses Google Docs Viewer to render PDF, Excel, and PowerPoint files directly in the browser.
 
-Service URL:
-https://docs.google.com/viewer
-
-Purpose:
-Used to preview and display supported documents inside the frontend viewer widgets.
-
-Data Sent:
-The publicly accessible URL of the document is sent to Google's servers to generate the document preview.
-
-When Data is Sent:
-Data is sent only when a visitor opens a page containing a document viewer widget that uses Google Docs Viewer.
-
-Privacy Policy:
-https://policies.google.com/privacy
-
-Terms of Service:
-https://policies.google.com/terms
+* Service URL: https://docs.google.com/viewer
+* Purpose: Used to preview and display supported documents inside the frontend viewer widgets.
+* Data Sent: The publicly accessible URL of the document is sent to Google's servers to generate the document preview.
+* When Data is Sent: Data is sent only when a visitor opens a page containing a document viewer widget that uses Google Docs Viewer.
+* Terms of Service: https://policies.google.com/terms
+* Privacy Policy: https://policies.google.com/privacy
 
 = Microsoft Office Online Viewer =
 
 This plugin uses Microsoft Office Online Viewer to render Word, Excel, and PowerPoint documents directly in the browser.
 
-Service URL:
-https://view.officeapps.live.com
+* Service URL: https://view.officeapps.live.com
+* Purpose: Used to preview and display Microsoft Office documents inside the frontend viewer widgets.
+* Data Sent: The publicly accessible URL of the document is sent to Microsoft's servers to generate the document preview.
+* When Data is Sent: Data is sent only when a visitor opens a page containing a document viewer widget that uses Microsoft Office Online Viewer.
+* Terms of Service: https://www.microsoft.com/en-us/legal/terms-of-use
+* Privacy Policy: https://privacy.microsoft.com/en-us/privacystatement
 
-Purpose:
-Used to preview and display Microsoft Office documents inside the frontend viewer widgets.
+= Freemius SDK & checkout.freemius.com =
 
-Data Sent:
-The publicly accessible URL of the document is sent to Microsoft's servers to generate the document preview.
+* Service URL: https://freemius.com
+* Purpose: Handles license activation, opt-in telemetry/analytics, and secure premium upgrades.
+* Data Sent: Site URL, administrator email, PHP & WordPress versions, active plugins list, and license keys.
+* Terms of Service: https://freemius.com/terms/
+* Privacy Policy: https://freemius.com/privacy/
 
-When Data is Sent:
-Data is sent only when a visitor opens a page containing a document viewer widget that uses Microsoft Office Online Viewer.
+= snippet.embedpdf.com =
 
-Privacy Policy:
-https://privacy.microsoft.com/en-us/privacystatement
+* Service URL: https://snippet.embedpdf.com
+* Purpose: Renders the sleek interactive PDF preview layout inside the frontend Sleek PDF Viewer widget.
+* Data Sent: Document file URL, browser user agent, and visitor IP address.
+* Terms of Service: https://embedpdf.com/terms
+* Privacy Policy: https://embedpdf.com/privacy
 
-Terms of Service:
-https://www.microsoft.com/en-us/legal/terms-of-use
+= Google Fonts =
+
+* Service URL: https://fonts.googleapis.com
+* Purpose: Delivers Lato and Roboto font faces for the admin settings dashboard.
+* Data Sent: Browser details and visitor IP address (standard HTTP headers).
+* Terms of Service: https://policies.google.com/terms
+* Privacy Policy: https://policies.google.com/privacy
 
 == Source Code ==
 
