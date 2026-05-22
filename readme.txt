@@ -1,14 +1,14 @@
 === Document Embedder Addons for Elementor – Embed Documents in Elementor Websites ===
 Plugin Name: Document Embedder Addons for Elementor – Embed Documents in Elementor Websites
-Version: 1.1.8
+Version: 1.1.9
 Author: bplugins, abuhayat, shehabulislam
 Author URI: http://bplugins.com
 Plugin URI: https://bplugins.com/products/document-embedder-addons-for-elementor
 Contributors: abuhayat,bplugins, shehabulislam, hazrath
 Tags: elementor, elementor addons, elementor widget, embed pdf, google docs
 Requires at least: 5.1
-Tested up to: 6.9
-Stable tag: 1.1.8
+Tested up to: 7.0
+Stable tag: 1.1.9
 Requires PHP: 7.1
 Donate link: https://www.buymeacoffee.com/abuhayat
 License: GPLv3 or later
@@ -105,6 +105,12 @@ This plugin connects to the following external services from the admin dashboard
 * Data Sent: Only the plugin slug is transmitted; no personal or site data is collected.
 * Terms of Service: https://bplugins.com/terms-of-service/
 * Privacy Policy: https://bplugins.com/privacy-policy/
+
+= bpl-tools =
+* Source: GitHub: https://github.com/bPlugins/bpl-tools
+* License: GPL-2.0-or-later – https://www.gnu.org/licenses/gpl-2.0.html
+* Purpose: Shared utility library providing admin dashboard components and common Gutenberg editor controls.
+* External Services: The library may connect to bPlugins, WordPress.org, and Freemius services for product data and checkout functionality. See full details: https://github.com/bPlugins/bpl-tools#external-requests--why-they-are-made
 
 = WordPress.org Plugins API =
 
@@ -248,6 +254,12 @@ Our dedicated support team is ready to help! Please submit your questions or iss
 11. Google Slide Viewer
 
 == Changelog ==
+
+= 1.1.9 – 22-May-26 =
+* Update: Cleaned up core file call.
+* Update: Add the dependency plugin.
+* Fix: Resolved all plugin check issues.
+* New: Released version 1.1.9.
 
 = 1.1.8 – 11-May-26 =
 * Update: Cleaned up the codebase and removed unused dependencies.
