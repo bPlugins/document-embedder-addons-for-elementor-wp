@@ -53,7 +53,7 @@ export const dashboardInfo = (info) => {
 				version: '1.1.9 – 22-May-26',
 				type: 'update',
 				list: [
-					 'Cleaned up core file call.',
+					'Cleaned up core file call.',
 					'Add the dependency plugin.',
 					'Resolved all plugin check issues.',
 					'Released version 1.1.9.',
