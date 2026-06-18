@@ -50,6 +50,14 @@ export const dashboardInfo = (info) => {
 		],
 		changelogs: [
 			{
+				version: '1.1.10 18-June-26',
+				type: 'fix',
+				list: [
+					'Resolved all widgets missing issue.',
+					'Released version 1.1.10.',
+				]
+			},
+			{
 				version: '1.1.9 – 22-May-26',
 				type: 'update',
 				list: [
