@@ -50,6 +50,14 @@ export const dashboardInfo = (info) => {
 		],
 		changelogs: [
 			{
+				version: '1.2.0 27-June-26',
+				type: 'update',
+				list: [
+					'Update: Add new version of Freemius SDK.',
+					'Released version 1.2.0.',
+				]
+			},
+			{
 				version: '1.1.10 18-June-26',
 				type: 'fix',
 				list: [
