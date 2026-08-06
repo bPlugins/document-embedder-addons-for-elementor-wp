@@ -123,5 +123,13 @@ export default [
         demo: `${demoLink}/flip-3d-pdf-viewer/`,
         docs: `${docsURL}`,
         isPremium: true
+    },
+    {
+        name: `deafe_modern_document_library`,
+        title: 'Modern Document Library',
+        icon: documentLibraryIcon,
+        demo: `${demoLink}/modern-document-library-premium-grid/`,
+        docs: `${docsURL}`,
+        isPremium: true
     }
 ];
