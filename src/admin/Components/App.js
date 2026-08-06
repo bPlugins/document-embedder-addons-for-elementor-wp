@@ -7,22 +7,22 @@ import FeatureCompare from '../../../../bpl-tools/Admin/FeatureCompare';
 import Activation from '../../../../bpl-tools/Admin/Activation';
 import OurPlugins from '../../../../bpl-tools/Admin/OurPlugins';
 
+import Welcome from '../../../../bpl-tools/Admin/Welcome';
 import Layout from './Layout';
-import Welcome from './Welcome';
 import blocks from '../utils/blocks';
-import { demoInfo, pricingInfo } from '../utils/data';
+import { demoInfo, pricingInfo, welcomeInfo } from '../utils/data';
 import useBlocksSettings from './useBlockSettings';
 
 const App = (props) => {
-	const { isPremium, hasPro, action, nonce, status: externalStatus } = props;
+	const { isPremium, hasPro, action, nonce, status: externalStatus, adminUrl } = props;
 	const { data, internalStatus, saveToBackend } = useBlocksSettings(action, nonce);
 
 	return <Router>
 		<Routes>
 			<Route path='/' element={<Layout {...props} />}>
-				<Route index element={<Welcome {...props} disabledBlocks={data} status={internalStatus} onChange={saveToBackend} />} />
+				<Route index element={<Welcome {...props} {...welcomeInfo(adminUrl)} disabledBlocks={data} status={internalStatus} onChange={saveToBackend} />} />
 
-				<Route path='welcome' element={<Welcome {...props} disabledBlocks={data} status={internalStatus} onChange={saveToBackend} />} />
+				<Route path='welcome' element={<Welcome {...props} {...welcomeInfo(adminUrl)} disabledBlocks={data} status={internalStatus} onChange={saveToBackend} />} />
 
 				<Route path='widgets' element={<Blocks {...props} pageTitle = 'All Widgets' allBlocks={blocks} disabledBlocks={data} status={internalStatus} onChange={saveToBackend} />} />
 
